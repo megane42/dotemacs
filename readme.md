@@ -10,4 +10,4 @@
 
 3. ~/.emacs.d/inits 以下に設定ファイルを機能ごとに書いていく。Prefix をつけると環境ごとにオンオフできる（Meadow だけとか）
 
-4. ~/.emacs.d/ で git clone して emacs を起動すると、2 で書いたパッケージがインストールされる。
+4. ~/.emacs.d/ で git clone して emacs を起動する。
