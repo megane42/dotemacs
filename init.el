@@ -2,11 +2,13 @@
 ;; 1. 全力で emacs 24 をインストール。
 ;;    (少なくとも package.el を入れる)
 ;;
-;; 2. ~/.emacs.d/inits/20-package-sync.el の上の方に
+;; 2. このファイル内の package-list に
 ;;    package.el で使うパッケージを書いていく。
 ;;
 ;; 3. ~/.emacs.d/inits 以下に設定ファイルを機能ごとに書いていく。
 ;;    Prefix をつけると環境ごとにオンオフできる（Meadow だけとか）
+;;
+;;  参考: http://stackoverflow.com/a/10093312
 ;; ------------------------------------------------------
 
 (require 'package)
@@ -14,8 +16,24 @@
 (add-to-list 'package-archives  '("marmalade" . "http://marmalade-repo.org/packages/"))
 (package-initialize)
 
-;; ここに「init-loaderが入ってなかったらインストール」という処理を入れないと
-;; init-loaderを手動で入れる羽目になる。あとでやる。
+;; ここに使いたいパッケージ名を書いていく
+(setq package-list 
+      '(init-loader
+	php-mode
+	markdown-mode
+	auto-complete
+	rainbow-delimiters
+	smooth-scroll
+	sr-speedbar ))
+
+;; fetch the list of packages available 
+(unless package-archive-contents
+  (package-refresh-contents))
+
+;; install the missing packages
+ (dolist (package package-list)
+   (unless (package-installed-p package)
+     (package-install package)))
 
 (require 'init-loader)
 (setq init-loader-show-log-after-init nil)
