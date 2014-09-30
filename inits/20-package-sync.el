@@ -10,6 +10,7 @@
     auto-complete
     rainbow-delimiters
     smooth-scroll
+    sr-speedbar
     )
   "起動時に自動的にインストールされるパッケージのリスト")
 
