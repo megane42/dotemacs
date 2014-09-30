@@ -10,7 +10,12 @@
 ;; ------------------------------------------------------
 
 (require 'package)
+(add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/"))
+(add-to-list 'package-archives  '("marmalade" . "http://marmalade-repo.org/packages/"))
 (package-initialize)
+
+;; ここに「init-loaderが入ってなかったらインストール」という処理を入れないと
+;; init-loaderを手動で入れる羽目になる。あとでやる。
 
 (require 'init-loader)
 (setq init-loader-show-log-after-init nil)
