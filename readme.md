@@ -5,8 +5,7 @@
 1. 全力で emacs 24 をインストール。
   * 少なくとも package.el を入れる。
 
-2. ~/.emacs.d/inits/20-package-sync.el の上の方にpackage.el で使うパッケージを書いていく。
-  * これなんとかしたい。
+2. init.el 内に package.el で使うパッケージを書いていく。
 
 3. ~/.emacs.d/inits 以下に設定ファイルを機能ごとに書いていく。Prefix をつけると環境ごとにオンオフできる（Meadow だけとか）
 
