@@ -25,7 +25,9 @@
 	rainbow-delimiters
 	smooth-scroll
 	sr-speedbar
-	web-mode ))
+	web-mode
+	fuzzy
+	ac-dabbrev))
 
 ;; fetch the list of packages available 
 (unless package-archive-contents
