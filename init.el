@@ -24,7 +24,8 @@
 	auto-complete
 	rainbow-delimiters
 	smooth-scroll
-	sr-speedbar ))
+	sr-speedbar
+	web-mode ))
 
 ;; fetch the list of packages available 
 (unless package-archive-contents
