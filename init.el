@@ -27,7 +27,8 @@
 	sr-speedbar
 	web-mode
 	fuzzy
-	ac-dabbrev))
+	ac-dabbrev
+	json-reformat))
 
 ;; fetch the list of packages available 
 (unless package-archive-contents
