@@ -28,7 +28,8 @@
 	web-mode
 	fuzzy
 	ac-dabbrev
-	json-reformat))
+	json-reformat
+	flymake-phpcs))
 
 ;; fetch the list of packages available 
 (unless package-archive-contents

@@ -14,3 +14,7 @@
   (interactive)
   (insert (format-time-string "%Y-%m-%d(%a)" (current-time))))
 (define-key global-map "\C-cd" `insert-current-time)
+
+;; F12キーでリロード
+(global-set-key
+ [f12] 'eval-current-buffer)
