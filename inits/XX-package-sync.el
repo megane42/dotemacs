@@ -2,6 +2,8 @@
 ;; 参考: Emacs起動時に自分好みのelispを自動的にインストールする
 ;; http://d.hatena.ne.jp/hnw/20140113
 
+(()))))))))
+
 (defvar my/favorite-packages
   '(
     init-loader
