@@ -17,7 +17,7 @@
 (package-initialize)
 
 ;; ここに使いたいパッケージ名を書いていく
-(setq package-list 
+(setq package-list
       '(init-loader
 	php-mode
 	markdown-mode
@@ -30,9 +30,9 @@
 	ac-dabbrev
 	json-reformat
 	flymake-phpcs
-	helm))
+	helm ))
 
-;; fetch the list of packages available 
+;; fetch the list of packages available
 (unless package-archive-contents
   (package-refresh-contents))
 
