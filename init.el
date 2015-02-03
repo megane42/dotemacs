@@ -29,7 +29,8 @@
 	fuzzy
 	ac-dabbrev
 	json-reformat
-	flymake-phpcs))
+	flymake-phpcs
+	helm))
 
 ;; fetch the list of packages available 
 (unless package-archive-contents
