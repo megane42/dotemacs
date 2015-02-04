@@ -30,7 +30,8 @@
 	ac-dabbrev
 	json-reformat
 	flymake-phpcs
-	helm ))
+	helm
+	quickrun))
 
 ;; fetch the list of packages available
 (unless package-archive-contents

@@ -17,4 +17,4 @@
 
 ;; F12キーでリロード
 (global-set-key
- [f12] 'eval-current-buffer)
+ [f12] 'eval-buffer)
