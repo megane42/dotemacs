@@ -18,3 +18,6 @@
 ;; F12キーでリロード
 (global-set-key
  [f12] 'eval-buffer)
+
+;; "C-t" でウインドウを切り替える
+(define-key global-map (kbd "C-t") 'other-window)
