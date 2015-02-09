@@ -22,12 +22,11 @@
 	php-mode
 	markdown-mode
 	auto-complete
+	ac-dabbrev
+	fuzzy
 	rainbow-delimiters
-	smooth-scroll
 	sr-speedbar
 	web-mode
-	fuzzy
-	ac-dabbrev
 	json-reformat
 	flymake-phpcs
 	helm
