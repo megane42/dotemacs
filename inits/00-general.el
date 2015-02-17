@@ -12,7 +12,7 @@
 ;; 参考: http://d.hatena.ne.jp/crosshope/20110602/1306947203
 (defun insert-current-time()
   (interactive)
-  (insert (format-time-string "%Y-%m-%d(%a)" (current-time))))
+  (insert (format-time-string "<%Y-%m-%d %a>" (current-time))))
 (define-key global-map "\C-cd" `insert-current-time)
 
 ;; F12キーでリロード
