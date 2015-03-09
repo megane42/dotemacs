@@ -1,7 +1,3 @@
-;; 色設定
-(load-theme 'manoj-dark t)
-(enable-theme 'manoj-dark)
-
 ;; 日本語やら Unicode の2バイト文字などが崩れる問題を解決
 (set-language-environment "Japanese")
 (prefer-coding-system 'utf-8-unix)
