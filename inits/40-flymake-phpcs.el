@@ -1,7 +1,5 @@
 (require 'flymake-phpcs)
 (add-hook 'php-mode-hook 'flymake-phpcs-load)
-(custom-set-variables
- '(flymake-phpcs-standard "CakePHP"))
 
 ;; 次の（前の）エラーにジャンプ
 (global-set-key "\M-n" 'flymake-goto-next-error)

@@ -30,7 +30,8 @@
 	json-reformat
 	flymake-phpcs
 	helm
-	quickrun))
+	multi-term
+	shell-pop))
 
 ;; fetch the list of packages available
 (unless package-archive-contents

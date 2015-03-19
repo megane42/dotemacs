@@ -21,3 +21,9 @@
 
 ;; "C-t" でウインドウを切り替える
 (define-key global-map (kbd "C-t") 'other-window)
+
+;; C-+ で拡大, C-- で縮小, C-0 でデフォルトに戻す
+;; 参考: http://qiita.com/scalper/items/9a0eedb004d3094dada6
+(global-set-key [(control ?+)] (lambda () (interactive) (text-scale-increase 1)))
+(global-set-key [(control ?-)] (lambda () (interactive) (text-scale-decrease 1)))
+(global-set-key [(control ?0)] (lambda () (interactive) (text-scale-increase 0)))
