@@ -31,7 +31,9 @@
 	flymake-phpcs
 	helm
 	multi-term
-	shell-pop))
+	shell-pop
+	multiple-cursors
+	expand-region))
 
 ;; fetch the list of packages available
 (unless package-archive-contents
