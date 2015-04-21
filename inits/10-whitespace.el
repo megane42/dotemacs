@@ -34,7 +34,7 @@
                     :underline t)
 (set-face-attribute 'whitespace-tab nil
                     :background my/bg-color
-                    :foreground "LightSkyBlue"
+                    :foreground "grey30"
                     :underline t)
 (set-face-attribute 'whitespace-space nil
                     :background my/bg-color

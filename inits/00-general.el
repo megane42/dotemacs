@@ -27,3 +27,6 @@
 (global-set-key [(control ?+)] (lambda () (interactive) (text-scale-increase 1)))
 (global-set-key [(control ?-)] (lambda () (interactive) (text-scale-decrease 1)))
 (global-set-key [(control ?0)] (lambda () (interactive) (text-scale-increase 0)))
+
+;; タブ幅
+(setq default-tab-width 2)
