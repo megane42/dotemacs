@@ -1,3 +1,0 @@
-/usr/local/Cellar/emacs/24.3/bin/emacsclient -n "$1" --alternate-editor /Applications/Emacs.app/Contents/MacOS/Emacs &
-
-

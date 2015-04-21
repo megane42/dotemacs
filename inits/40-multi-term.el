@@ -4,6 +4,11 @@
 (add-to-list 'term-unbind-key-list '"C-t")
 (add-to-list 'term-unbind-key-list '"C-q")
 
-;; ESC 2回で ESC を送信 (vi対策)
-(add-hook 'term-mode-hook '(lambda ()
-			     (define-key term-raw-map (kbd "ESC") 'term-send-raw)))
+;; ESC2回で term にESC1回分を直接送信
+;; 参考: http://fukuyama.co/zsh
+(add-hook 'term-mode-hook
+ (lambda ()
+   (define-key term-raw-map (kbd "ESC ESC")
+     (lambda ()
+       (interactive)
+       (term-send-raw-string "\e")))))
