@@ -33,7 +33,9 @@
 	multi-term
 	shell-pop
 	multiple-cursors
-	expand-region))
+	expand-region
+	visual-regexp
+	highlight-symbol))
 
 ;; fetch the list of packages available
 (unless package-archive-contents

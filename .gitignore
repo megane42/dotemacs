@@ -1,11 +1,12 @@
 .DS_Store
+.swp
+.mc-lists.el
+
 elpa
 ac-comphist.dat
 auto-save-list
 server
-<<<<<<< HEAD
-.swp
-=======
 url
+eshell
+
 /EmacsClient.app
->>>>>>> 5df30e33a8153136a4d1bbc74e25897387426b27

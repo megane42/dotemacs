@@ -3,10 +3,19 @@
 
 (setq mc/cmds-to-run-for-all
       '(
-	org-delete-char
-	org-self-insert-command
-	))
+				helm-show-kill-ring
+				ignore
+				kill-region
+				markdown-exdent-or-delete
+				org-beginning-of-line
+				org-delete-char
+				org-kill-line
+				org-self-insert-command
+				org-yank
+				))
 
 (setq mc/cmds-to-run-once
       '(
-	))
+				next-buffer
+				org-cycle
+				))
