@@ -7,6 +7,8 @@
 ;; 色設定
 (load-theme 'manoj-dark t)
 (enable-theme 'manoj-dark)
+(custom-set-faces
+'(link ((t (:foreground "cornflower blue" :underline t)))))
 
 ;; 日付を入力
 ;; 参考: http://d.hatena.ne.jp/crosshope/20110602/1306947203
