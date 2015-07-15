@@ -1,6 +1,8 @@
 ;; 参考: http://qiita.com/itiut@github/items/4d74da2412a29ef59c3a
 
 (require 'whitespace)
+(global-whitespace-mode 1)
+
 (setq whitespace-style '(face           ; faceで可視化
                          trailing       ; 行末
                          tabs           ; タブ
@@ -25,20 +27,16 @@
 ;; 保存前に自動でクリーンアップ
 (setq whitespace-action '(auto-cleanup))
 
-(global-whitespace-mode 1)
-
-(defvar my/bg-color "#000000")
+(defvar my/bg-color "#081724")
 (set-face-attribute 'whitespace-trailing nil
                     :background my/bg-color
                     :foreground "DeepPink"
                     :underline t)
 (set-face-attribute 'whitespace-tab nil
-                    :background my/bg-color
-                    :foreground "grey30"
+                    :background "#202d3d"
+                    :foreground "#fffe4e"
                     :underline t)
 (set-face-attribute 'whitespace-space nil
-                    :background my/bg-color
-                    :foreground "GreenYellow"
+                    :background "navajo white"
+                    :foreground my/bg-color
                     :weight 'bold)
-(set-face-attribute 'whitespace-empty nil
-                    :background my/bg-color)

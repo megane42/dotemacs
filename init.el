@@ -19,23 +19,25 @@
 ;; ここに使いたいパッケージ名を書いていく
 (setq package-list
       '(init-loader
-	php-mode
-	markdown-mode
-	auto-complete
-	ac-dabbrev
-	fuzzy
-	rainbow-delimiters
-	sr-speedbar
-	web-mode
-	json-reformat
-	flymake-phpcs
-	helm
-	multi-term
-	shell-pop
-	multiple-cursors
-	expand-region
-	visual-regexp
-	highlight-symbol))
+        php-mode
+        markdown-mode
+        auto-complete
+        ac-dabbrev
+        fuzzy
+        rainbow-delimiters
+        sr-speedbar
+        web-mode
+        json-reformat
+        flymake-phpcs
+        helm
+        multi-term
+        shell-pop
+        multiple-cursors
+        expand-region
+        visual-regexp
+        highlight-symbol
+        textile-mode
+        tronesque-theme))
 
 ;; fetch the list of packages available
 (unless package-archive-contents

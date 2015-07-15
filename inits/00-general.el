@@ -5,10 +5,10 @@
 (setq auto-save-default nil)
 
 ;; 色設定
-(load-theme 'manoj-dark t)
-(enable-theme 'manoj-dark)
-(custom-set-faces
-'(link ((t (:foreground "cornflower blue" :underline t)))))
+;; (load-theme 'manoj-dark t)
+;; (enable-theme 'manoj-dark)
+(load-theme 'tronesque t)
+(tronesque-mode-line)
 
 ;; 日付を入力
 ;; 参考: http://d.hatena.ne.jp/crosshope/20110602/1306947203
@@ -32,3 +32,6 @@
 
 ;; タブ幅
 (setq default-tab-width 2)
+
+;; 基本的にインデントにタブは使わない
+(setq-default indent-tabs-mode nil)
