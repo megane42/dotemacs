@@ -27,16 +27,16 @@
 ;; 保存前に自動でクリーンアップ
 (setq whitespace-action '(auto-cleanup))
 
-(defvar my/bg-color "#081724")
+(defvar my/bg-color "black")
 (set-face-attribute 'whitespace-trailing nil
-                    :background my/bg-color
+                    :background "black"
                     :foreground "DeepPink"
                     :underline t)
 (set-face-attribute 'whitespace-tab nil
-                    :background "#202d3d"
-                    :foreground "#fffe4e"
+                    :background "black"
+                    :foreground "brightyellow"
                     :underline t)
 (set-face-attribute 'whitespace-space nil
                     :background "navajo white"
-                    :foreground my/bg-color
+                    :foreground "black"
                     :weight 'bold)
