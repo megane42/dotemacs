@@ -13,4 +13,8 @@
 
 (custom-set-faces
  '(org-date ((t (:foreground "cornflower blue" :underline t))))
- '(org-link ((t (:foreground "cornflower blue" :underline t)))))
+ '(org-link ((t (:foreground "cornflower blue" :underline t))))
+ ;; tronesque theme が勝手に見出しの字を大きくするのを打ち消す
+ '(outline-1 ((t (:height 1.0))))
+ '(outline-2 ((t (:height 1.0))))
+ '(outline-3 ((t (:height 1.0)))))
