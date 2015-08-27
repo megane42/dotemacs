@@ -8,5 +8,8 @@ auto-save-list
 server
 url
 eshell
+bookmarks
 
 /EmacsClient.app
+
+inits/*secret.el

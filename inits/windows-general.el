@@ -1,6 +1,9 @@
 ;; ƒtƒHƒ“ƒg
-(set-face-attribute 'default nil
-		    :family "Consolas" ;; font
-		    :height 128)       ;; font size
-(set-fontset-font nil 'japanese-jisx0208 (font-spec :family "MeiryoKe")) ;; “ú–{Œê
-(setq face-font-rescale-alist '(("MeiryoKe" . 1.2))) ;; ”¼Šp‚Æ‘SŠp‚Ì”ä‚ð1:2‚É‚·‚é
+
+;; (set-face-attribute 'default nil
+;;                     :family "Consolas" ;; font
+;;                     :height 128)       ;; font size
+;; (set-fontset-font nil 'japanese-jisx0208 (font-spec :family "MeiryoKe")) ;; “ú–{Œê
+;; (setq face-font-rescale-alist '(("MeiryoKe" . 1.2)))  ;; ”¼Šp‚Æ‘SŠp‚Ì”ä‚ð1:2‚É‚·‚é
+
+(add-to-list 'default-frame-alist '(font . "MigMix 1M"))
