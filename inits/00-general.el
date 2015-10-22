@@ -35,3 +35,6 @@
 
 ;; 基本的にインデントにタブは使わない
 (setq-default indent-tabs-mode nil)
+
+;; バックスペースはバックスペースとして使う
+(keyboard-translate ?\C-h ?\C-?)

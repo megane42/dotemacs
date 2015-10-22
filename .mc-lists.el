@@ -3,19 +3,23 @@
 
 (setq mc/cmds-to-run-for-all
       '(
-				helm-show-kill-ring
-				ignore
-				kill-region
-				markdown-exdent-or-delete
-				org-beginning-of-line
-				org-delete-char
-				org-kill-line
-				org-self-insert-command
-				org-yank
-				))
+        electric-newline-and-maybe-indent
+        helm-show-kill-ring
+        ignore
+        kill-region
+        markdown-exdent-or-delete
+        org-beginning-of-line
+        org-delete-char
+        org-end-of-line
+        org-force-self-insert
+        org-kill-line
+        org-self-insert-command
+        org-yank
+        toggle-input-method
+        ))
 
 (setq mc/cmds-to-run-once
       '(
-				next-buffer
-				org-cycle
-				))
+        next-buffer
+        org-cycle
+        ))
