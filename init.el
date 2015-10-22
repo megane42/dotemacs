@@ -37,8 +37,7 @@
         visual-regexp
         highlight-symbol
         textile-mode
-        tronesque-theme
-        undo-tree))
+        tronesque-theme))
 
 ;; fetch the list of packages available
 (unless package-archive-contents
