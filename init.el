@@ -51,5 +51,5 @@
      (package-install package)))
 
 (require 'init-loader)
-(setq init-loader-show-log-after-init nil)yes
+(setq init-loader-show-log-after-init nil)
 (init-loader-load "~/.emacs.d/inits")
