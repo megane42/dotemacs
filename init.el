@@ -37,7 +37,9 @@
         visual-regexp
         highlight-symbol
         textile-mode
-        tronesque-theme))
+        tronesque-theme
+        recentf-ext
+        open-junk-file))
 
 ;; fetch the list of packages available
 (unless package-archive-contents
@@ -49,5 +51,5 @@
      (package-install package)))
 
 (require 'init-loader)
-(setq init-loader-show-log-after-init nil)
+(setq init-loader-show-log-after-init nil)yes
 (init-loader-load "~/.emacs.d/inits")

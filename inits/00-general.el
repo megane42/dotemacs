@@ -18,8 +18,7 @@
 (define-key global-map "\C-cd" `insert-current-time)
 
 ;; F12キーでリロード
-(global-set-key
- [f12] 'eval-buffer)
+(define-key global-map (kbd "<f12>") 'eval-buffer)
 
 ;; "C-t" でウインドウを切り替える
 (define-key global-map (kbd "C-t") 'other-window)
@@ -38,3 +37,6 @@
 
 ;; バックスペースはバックスペースとして使う
 (keyboard-translate ?\C-h ?\C-?)
+
+;; emacs 内蔵 IME のオンオフが誤爆するのを防ぐ
+(define-key global-map (kbd "C-\\") nil)

@@ -3,9 +3,14 @@
 
 (setq mc/cmds-to-run-for-all
       '(
+        c-electric-delete-forward
+        c-electric-semi&comma
+        c-electric-slash
+        camel-to-snake-backward-word
         electric-newline-and-maybe-indent
         helm-show-kill-ring
         ignore
+        indent-for-tab-command
         kill-region
         markdown-exdent-or-delete
         org-beginning-of-line
@@ -13,6 +18,7 @@
         org-end-of-line
         org-force-self-insert
         org-kill-line
+        org-return-indent
         org-self-insert-command
         org-yank
         toggle-input-method
@@ -20,6 +26,8 @@
 
 (setq mc/cmds-to-run-once
       '(
+        delete-window
         next-buffer
         org-cycle
+        shell-pop
         ))

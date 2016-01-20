@@ -18,3 +18,8 @@
  '(outline-1 ((t (:height 1.0))))
  '(outline-2 ((t (:height 1.0))))
  '(outline-3 ((t (:height 1.0)))))
+
+;; とっさのメモ書きができるようにする
+(require 'open-junk-file)
+(setq open-junk-file-format "~/org/junk/%Y-%m%d-%H%M%S.org")
+(global-set-key "\C-xj" 'open-junk-file)
