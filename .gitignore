@@ -9,6 +9,7 @@ server
 url
 eshell
 bookmarks
+recentf
 
 /EmacsClient.app
 

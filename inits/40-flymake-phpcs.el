@@ -1,6 +1,3 @@
-(require 'flymake-phpcs)
-(add-hook 'php-mode-hook 'flymake-phpcs-load)
-
 ;; 次の（前の）エラーにジャンプ
 (global-set-key "\M-n" 'flymake-goto-next-error)
 (global-set-key "\M-p" 'flymake-goto-prev-error)

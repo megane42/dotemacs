@@ -28,18 +28,13 @@
         ac-dabbrev
         fuzzy
         rainbow-delimiters
-        sr-speedbar
         web-mode
-        json-reformat
         flymake-phpcs
         helm
-        multi-term
-        shell-pop
         multiple-cursors
         expand-region
         visual-regexp
         highlight-symbol
-        textile-mode
         tronesque-theme
         recentf-ext
         open-junk-file

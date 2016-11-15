@@ -10,7 +10,8 @@
 (require 'cl-lib)
 (require 'color)
 
-;; 関数にしないとうまくいかない
+;; 括弧の色を強調する設定
+;; emacs の起動が一通り完了したあとに実行しないとうまくいかなかった
 ;; 参考: http://futurismo.biz/archives/2888
 (defun rainbow-delimiters-using-stronger-colors ()
   (interactive)
@@ -19,4 +20,4 @@
    do
    (let ((face (intern (format "rainbow-delimiters-depth-%d-face" index))))
      (cl-callf color-saturate-name (face-foreground face) 30))))
- (add-hook 'emacs-startup-hook 'rainbow-delimiters-using-stronger-colors)
+(add-hook 'emacs-startup-hook 'rainbow-delimiters-using-stronger-colors)

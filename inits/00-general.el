@@ -40,3 +40,6 @@
 
 ;; emacs 内蔵 IME のオンオフが誤爆するのを防ぐ
 (define-key global-map (kbd "C-\\") nil)
+
+;; json-pretty-print を使えるようにする
+(require 'json)
