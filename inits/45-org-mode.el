@@ -23,3 +23,5 @@
 (require 'open-junk-file)
 (setq open-junk-file-format "~/org/junk/%Y-%m%d-%H%M%S.org")
 (global-set-key "\C-xj" 'open-junk-file)
+
+(setq org-src-fontify-natively t)

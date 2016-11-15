@@ -8,6 +8,9 @@
 ;; 3. ~/.emacs.d/inits 以下に設定ファイルを機能ごとに書いていく。
 ;;    Prefix をつけると環境ごとにオンオフできる（Meadow だけとか）
 ;;
+;; 4. 各パッケージが依存している外部プログラムを入れる。
+;;    パッと浮かぶのは、migemo や phpcs など。詳細は各パッケージの設定ファイルに書いた。
+;;
 ;;  参考: http://stackoverflow.com/a/10093312
 ;; ------------------------------------------------------
 
@@ -39,7 +42,9 @@
         textile-mode
         tronesque-theme
         recentf-ext
-        open-junk-file))
+        open-junk-file
+        migemo
+        helm-migemo))
 
 ;; fetch the list of packages available
 (unless package-archive-contents

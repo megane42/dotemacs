@@ -2,8 +2,8 @@
 ;; 参考: http://d.hatena.ne.jp/murase_syuka/20140815/1408061850
 
 (require 'rainbow-delimiters)
-(add-to-list 'rainbow-delimiters-ignore-modes 'fundamental-mode) ; helmとの干渉回避
 (add-hook 'prog-mode-hook 'rainbow-delimiters-mode)
+(add-hook 'org-mode-hook 'rainbow-delimiters-mode)
 
 ;; these setting should be placed after load-theme
 ;; using stronger colors

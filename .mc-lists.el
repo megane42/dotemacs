@@ -8,12 +8,14 @@
         c-electric-slash
         camel-to-snake-backward-word
         electric-newline-and-maybe-indent
+        helm-M-x
         helm-show-kill-ring
         ignore
         indent-for-tab-command
         kill-region
         markdown-exdent-or-delete
         org-beginning-of-line
+        org-ctrl-c-ctrl-c
         org-delete-char
         org-end-of-line
         org-force-self-insert
@@ -21,6 +23,7 @@
         org-return-indent
         org-self-insert-command
         org-yank
+        sh-assignment
         toggle-input-method
         ))
 
