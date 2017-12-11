@@ -2,18 +2,25 @@
 
 ## 使い方
 
-1. 全力で emacs 24 をインストール。
-  * 少なくとも package.el を入れる。
+1. emacs 24 以降をインストール。
+    * 24 以降は package.el が標準で入っているため。
+
+```bash
+# Mac
+brew tap railwaycat/emacsmacport
+brew install emacs-mac --with-modern-icon
+
+# アイコンがダサいので付属のものに置き換える
+```
 
 2. ホームフォルダで `git clone https://github.com/megane42/dotemacs.git .emacs.d`
 
-3. init.el 内に package.el で使うパッケージを列挙する。
+3. emacs を起動すると列挙したパッケージが自動でインストールされる。
 
-4. emacs を起動すると列挙したパッケージが自動でインストールされる。
+4. 使うパッケージが増えた時は init.el のパッケージリストに追記する。
 
-5. ~/.emacs.d/inits 以下に設定ファイルを機能ごとに書いていく。Prefix をつけると環境ごとにオンオフできる（Meadow だけとか）
-
-## 依存する外部プログラムのインストール
-
-一部のパッケージは、cmigemo や phpcs などの外部プログラムを入れる必要がある。
-それらのインストール方法もできるだけメモしている（各パッケージの設定ファイルに書いている）が、書き漏らしがあるかもしれない。。。
+5. ~/.emacs.d/inits 以下に設定ファイルを機能ごとに書いていく。
+    * 参考: https://qiita.com/kai2nenobu/items/5dfae3767514584f5220
+    * ファイル名先頭の2桁の数字順にロードされる
+    * Prefix をつけると環境ごとにオンオフできる（Linux だけとか）
+        * `system-type` とかを使った方法に変えた方が依存が減ってシンプルかもしれない

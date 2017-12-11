@@ -1,6 +1,6 @@
 .DS_Store
 .swp
-.mc-lists.el
+.org-id-locations
 
 elpa
 ac-comphist.dat

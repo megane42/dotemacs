@@ -3,34 +3,28 @@
 
 (setq mc/cmds-to-run-for-all
       '(
+        c-electric-brace
         c-electric-delete-forward
-        c-electric-semi&comma
-        c-electric-slash
-        camel-to-snake-backward-word
+        c-indent-line-or-region
         electric-newline-and-maybe-indent
-        helm-M-x
         helm-show-kill-ring
         ignore
         indent-for-tab-command
         kill-region
         markdown-exdent-or-delete
         org-beginning-of-line
-        org-ctrl-c-ctrl-c
         org-delete-char
-        org-end-of-line
-        org-force-self-insert
         org-kill-line
-        org-return-indent
         org-self-insert-command
         org-yank
+        sgml-slash
         sh-assignment
-        toggle-input-method
         ))
 
 (setq mc/cmds-to-run-once
       '(
-        delete-window
         next-buffer
         org-cycle
-        shell-pop
+        python-indent-electric-colon
+        yaml-electric-backspace
         ))

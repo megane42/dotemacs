@@ -1,55 +1,47 @@
-;; ------------------------------------------------------
-;; 1. 全力で emacs 24 をインストール。
-;;    (少なくとも package.el を入れる)
-;;
-;; 2. このファイル内の package-list に
-;;    package.el で使うパッケージを書いていく。
-;;
-;; 3. ~/.emacs.d/inits 以下に設定ファイルを機能ごとに書いていく。
-;;    Prefix をつけると環境ごとにオンオフできる（Meadow だけとか）
-;;
-;; 4. 各パッケージが依存している外部プログラムを入れる。
-;;    パッと浮かぶのは、migemo や phpcs など。詳細は各パッケージの設定ファイルに書いた。
-;;
-;;  参考: http://stackoverflow.com/a/10093312
-;; ------------------------------------------------------
-
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/"))
-(add-to-list 'package-archives  '("marmalade" . "http://marmalade-repo.org/packages/"))
+(add-to-list 'package-archives '("org"   . "http://orgmode.org/elpa/"))
 (package-initialize)
 
-;; ここに使いたいパッケージ名を書いていく
-(setq package-list
-      '(init-loader
-        php-mode
-        markdown-mode
-        auto-complete
-        ac-dabbrev
-        fuzzy
-        rainbow-delimiters
-        web-mode
-        flymake-phpcs
-        helm
-        multiple-cursors
-        expand-region
-        visual-regexp
-        highlight-symbol
-        tronesque-theme
-        recentf-ext
-        open-junk-file
-        migemo
-        helm-migemo))
 
-;; fetch the list of packages available
+;; =======================================================
+;; パッケージインストール
+;; =======================================================
+
+(setq package-list 
+  '(init-loader
+    use-package
+    helm
+    multiple-cursors
+    rainbow-delimiters
+    expand-region
+    markdown-mode
+    web-mode
+    open-junk-file
+    recentf-ext
+    highlight-symbol
+    visual-regexp
+    ;; php-mode
+    ;; flymake-phpcs
+    ;; auto-complete
+    ;; ac-dabbrev
+    ;; fuzzy
+    ))
+
+;; パッケージリストを更新
 (unless package-archive-contents
   (package-refresh-contents))
 
-;; install the missing packages
- (dolist (package package-list)
-   (unless (package-installed-p package)
-     (package-install package)))
+;; 未インストールのパッケージを一括インストール
+(dolist (package package-list)
+  (unless (package-installed-p package)
+    (package-install package)))
 
-(require 'init-loader)
-(setq init-loader-show-log-after-init nil)
-(init-loader-load "~/.emacs.d/inits")
+;; =======================================================
+;; 設定ファイルのロード
+;; =======================================================
+
+(use-package init-loader
+  :config
+  ;; (setq init-loader-show-log-after-init nil)
+  (init-loader-load "~/.emacs.d/inits"))
