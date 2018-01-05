@@ -54,3 +54,19 @@
   ;; Command (= Meta) を使ったキーバインドが Mac に吸われないようにする
   (custom-set-variables
    '(mac-pass-command-to-system nil)))
+
+
+;; ============================================================
+;; Windows (NTEmacs) 限定設定
+;; ============================================================
+(when (equal system-type 'windows-nt)
+  ;; emacsclientを使えるようにする(単一の窓で表示できるようになる）
+  (server-start)
+ 
+  ;; バッファ閉じるとき still have client とか言われるのを黙らせる
+  (remove-hook
+   'kill-buffer-query-functions
+   'server-kill-buffer-query-function)
+
+  ;; フォント設定
+  (add-to-list 'default-frame-alist '(font . "MigMix 2M")))
