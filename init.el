@@ -21,8 +21,7 @@
     recentf-ext
     highlight-symbol
     visual-regexp
-    ;; auto-complete
-    ;; ac-dabbrev
+    auto-complete
     ;; fuzzy
     ))
 
