@@ -51,9 +51,7 @@
 ;; ============================================================
 (when (equal system-type 'darwin)
   ;; Command (= Meta) を使ったキーバインドが Mac に吸われないようにする
-  (custom-set-variables
-   '(mac-pass-command-to-system nil)))
-
+  (setq mac-pass-control-to-system nil))
 
 ;; ============================================================
 ;; Windows (NTEmacs) 限定設定
