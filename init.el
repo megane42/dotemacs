@@ -21,6 +21,7 @@
     recentf-ext
     highlight-symbol
     visual-regexp
+    inf-ruby
     auto-complete
     ;; fuzzy
     ))
