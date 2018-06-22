@@ -8,7 +8,7 @@
 ;; パッケージインストール
 ;; =======================================================
 
-(setq package-list 
+(setq package-list
   '(init-loader
     use-package
     helm
@@ -21,8 +21,6 @@
     recentf-ext
     highlight-symbol
     visual-regexp
-    ;; php-mode
-    ;; flymake-phpcs
     ;; auto-complete
     ;; ac-dabbrev
     ;; fuzzy

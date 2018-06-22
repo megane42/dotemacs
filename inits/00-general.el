@@ -43,9 +43,8 @@
 (when (file-exists-p custom-file)
   (load custom-file))
 
-;; ツールバー・メニューバーを非表示
+;; ツールバーを非表示
 (tool-bar-mode 0)
-(menu-bar-mode 0)
 
 ;; ============================================================
 ;; Mac (EMP版) 限定設定
@@ -62,7 +61,7 @@
 (when (equal system-type 'windows-nt)
   ;; emacsclientを使えるようにする(単一の窓で表示できるようになる）
   (server-start)
- 
+
   ;; バッファ閉じるとき still have client とか言われるのを黙らせる
   (remove-hook
    'kill-buffer-query-functions

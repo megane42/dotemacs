@@ -14,6 +14,7 @@
         markdown-exdent-or-delete
         org-beginning-of-line
         org-delete-char
+        org-force-self-insert
         org-kill-line
         org-self-insert-command
         org-yank
@@ -23,6 +24,7 @@
 
 (setq mc/cmds-to-run-once
       '(
+        comment-dwim
         next-buffer
         org-cycle
         python-indent-electric-colon
