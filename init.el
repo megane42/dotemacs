@@ -24,6 +24,7 @@
     inf-ruby
     auto-complete
     ;; fuzzy
+    projectile-rails
     ))
 
 ;; パッケージリストを更新
