@@ -12,6 +12,7 @@
         indent-for-tab-command
         kill-region
         markdown-exdent-or-delete
+        markdown-outdent-or-delete
         org-beginning-of-line
         org-delete-char
         org-force-self-insert

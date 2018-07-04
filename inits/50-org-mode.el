@@ -1,9 +1,9 @@
 ;; 基本設定
 (use-package org-install
-  :config 
+  :config
   ;; TODO の状態を定義
   (setq org-todo-keywords
-        '((sequence "TODO" "INPROGRESS" "WAIT" "INREVIEW" "|" "DONE" "REJECT")))
+        '((sequence "TODO" "INPROGRESS" "WAIT" "INREVIEW" "|" "DONE" "REJECT" "MEMO")))
 
   ;; アジェンダを読み込むパス
   (setq org-agenda-files '("~/org/current/"))
@@ -20,5 +20,11 @@
    '(org-link ((t (:foreground "cornflower blue" :underline t)))))
 
   ;; ???
-  (setq org-src-fontify-natively t))
+  (setq org-src-fontify-natively t)
 
+  (bind-key "C-c c" 'org-capture)
+  (setq org-capture-templates
+        '(
+          ("m" "メモ" entry (file "~/org/current/super_memo.org")
+           "* MEMO %?\n- %t")
+          )))
