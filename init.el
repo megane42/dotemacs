@@ -26,6 +26,7 @@
     ;; fuzzy
     projectile-rails
     yaml-mode
+    slim-mode
     ))
 
 ;; パッケージリストを更新
