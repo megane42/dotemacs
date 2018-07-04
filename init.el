@@ -25,6 +25,7 @@
     auto-complete
     ;; fuzzy
     projectile-rails
+    yaml-mode
     ))
 
 ;; パッケージリストを更新
